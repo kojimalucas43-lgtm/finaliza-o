@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VigIA — Manutenção Preventiva &amp; Engenharia Pós-Falha</title>
+  <meta name="description" content="VigIA: vigilância inteligente para manutenção preventiva. Contraste técnico minimalista entre manutenção realizada apenas após falhas e prevenção sistemática." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho Ultra-Minimalista -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand" aria-label="VigIA Início">
+        <span class="brand-mark">Vig<em>IA</em></span>
+        <span class="brand-sub">NBR 5462</span>
+      </a>
+
+      <button class="menu-btn" id="menuToggle" aria-label="Menu" aria-expanded="false">Menu</button>
+
+      <nav class="nav" id="siteNav">
+        <a href="#conceito">01. Conceito</a>
+        <a href="#vigia-pf">02. VigIA &amp; Curva P—F</a>
+        <a href="#rcm">03. Comparativo &amp; RCM</a>
+        <a href="#pratica">04. Simulador &amp; Plano</a>
+      </nav>
+    </div>
+    <div class="progress-line" id="scrollLine"></div>
+  </header>
+
+  <main>
+    <!-- Hero Monumental -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow reveal">VIGIA • INTELIGÊNCIA PREVENTIVA CONTRA PARADAS PÓS-FALHA</p>
+
+        <h1 class="hero-title reveal">
+          Não espere a falha.<br />
+          <em>A VigIA antecipa.</em><br />
+          A preventiva sustenta.
+        </h1>
+
+        <div class="hero-row reveal">
+          <p class="hero-lead">
+            A <strong>manutenção realizada apenas após a ocorrência de falhas</strong> (corretiva não planejada) interrompe a produção de surpresa e multiplica custos. A <strong>VigIA</strong> une vigilância contínua e <strong>Manutenção Preventiva</strong> para interceptar desvios antes da quebra.
+          </p>
+
+          <div class="hero-links">
+            <a href="#pratica" class="link-primary">Iniciar Plano Preventivo →</a>
+            <a href="#vigia-pf" class="link-quiet">Ver Curva P—F</a>
+          </div>
+        </div>
+
+        <div class="kpi-strip reveal">
+          <div class="kpi">
+            <span class="kpi-label">CUSTO PÓS-FALHA</span>
+            <strong class="kpi-num warn">3× — 10×</strong>
+            <span class="kpi-note">Mais cara que a preventiva programada</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-label">PREVENÇÃO PREVENTIVA</span>
+            <strong class="kpi-num prev">60%+</strong>
+            <span class="kpi-note">Falhas evitadas com rotina e lubrificação</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-label">MONITORAMENTO VIGIA</span>
+            <strong class="kpi-num prev">24 / 7</strong>
+            <span class="kpi-note">Detecção precoce antes do Ponto F</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01. Conceito: Pós-Falha vs. Preventiva & VigIA -->
+    <section class="section" id="conceito">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="index">01 / FUNDAMENTOS</span>
+          <h2>Do caos pós-falha à disciplina preventiva.</h2>
+        </div>
+
+        <div class="clean-list">
+          <article class="clean-item reveal">
+            <span class="item-no">01</span>
+            <div class="item-body">
+              <span class="item-tag warn">PÓS-FALHA • CORRETIVA NÃO PLANEJADA</span>
+              <h3>Atuação Apenas Depois da Quebra</h3>
+              <p>
+                Política reativa (<em>Run-to-Failure</em>) em que nenhuma intervenção ocorre até o colapso funcional do ativo. Gera lucro cessante imediato, danos em cascata em componentes acoplados e alto risco à segurança (NR-12). Restrita apenas a itens baratos, redundantes e não críticos.
+              </p>
+            </div>
+          </article>
+
+          <article class="clean-item is-highlighted reveal">
+            <span class="item-no">02</span>
+            <div class="item-body">
+              <span class="item-tag prev">PILAR CENTRAL • MANUTENÇÃO PREVENTIVA</span>
+              <h3>Intervenção Sistemática Antes da Falha</h3>
+              <p>
+                Execução programada por tempo, horímetro ou ciclos: lubrificação técnica, limpeza, alinhamento a laser, reaperto torquimétrico e troca preventiva de vedações e filtros. Elimina a causa-raiz do desgaste e sincroniza paradas com o PCP.
+              </p>
+            </div>
+          </article>
+
+          <article class="clean-item is-highlighted reveal">
+            <span class="item-no">03</span>
+            <div class="item-body">
+              <span class="item-tag prev">VIGILÂNCIA INTELIGENTE • SISTEMA VIGIA</span>
+              <h3>Prevenção Assistida por Sinais em Tempo Real</h3>
+              <p>
+                A <strong>VigIA</strong> atua como sentinela permanente sobre motores, bombas, compressores e painéis. Ao cruzar vibração, temperatura, corrente e horímetro com o cronograma preventivo, dispara alertas no início da degradação para impedir qualquer parada pós-falha.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. VigIA & Curva P-F -->
+    <section class="section" id="vigia-pf">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="index">02 / DIAGNÓSTICO P—F</span>
+          <h2>Onde a VigIA intercepta a falha.</h2>
+        </div>
+
+        <div class="pf-grid reveal">
+          <div class="pf-visual">
+            <div class="pf-nav" id="pfControls">
+              <button class="pf-step-btn active" data-stage="0">01. Preventiva</button>
+              <button class="pf-step-btn" data-stage="1">02. Alerta VigIA (P)</button>
+              <button class="pf-step-btn" data-stage="2">03. Degradação</button>
+              <button class="pf-step-btn" data-stage="3">04. Pós-Falha (F)</button>
+            </div>
+
+            <svg viewBox="0 0 700 300" class="pf-svg" role="img" aria-label="Curva P-F com ponto de detecção VigIA">
+              <line x1="48" y1="30" x2="48" y2="255" stroke="rgba(244,241,234,0.18)" stroke-width="1" />
+              <line x1="48" y1="255" x2="660" y2="255" stroke="rgba(244,241,234,0.18)" stroke-width="1" />
+              <line x1="48" y1="230" x2="660" y2="230" stroke="rgba(224,122,95,0.35)" stroke-width="1" stroke-dasharray="3 4" />
+
+              <text x="48" y="18" fill="#7d7a73" font-size="10" font-family="JetBrains Mono">CONDIÇÃO DO ATIVO</text>
+              <text x="660" y="278" fill="#7d7a73" font-size="10" font-family="JetBrains Mono" text-anchor="end">TEMPO →</text>
+              <text x="690" y="222" fill="#e07a5f" font-size="10" font-family="JetBrains Mono" text-anchor="end">QUEBRA (PONTO F)</text>
+
+              <path d="M 48 56 C 195 56, 270 64, 320 82 C 420 118, 500 170, 580 230" fill="none" stroke="#f4f1ea" stroke-width="1.75" />
+
+              <g class="pf-node" data-stage="0" style="cursor:pointer;">
+                <circle cx="155" cy="57" r="13" fill="rgba(110,231,183,0.12)" />
+                <circle cx="155" cy="57" r="4.5" fill="#6ee7b7" />
+                <text x="155" y="80" fill="#6ee7b7" font-size="10" font-family="JetBrains Mono" text-anchor="middle">PREVENTIVA</text>
+              </g>
+
+              <g class="pf-node" data-stage="1" style="cursor:pointer;">
+                <circle cx="320" cy="82" r="14" fill="rgba(110,231,183,0.18)" />
+                <circle cx="320" cy="82" r="5" fill="#6ee7b7" />
+                <text x="320" y="66" fill="#6ee7b7" font-size="10" font-family="JetBrains Mono" text-anchor="middle">VIGIA • PONTO P</text>
+              </g>
+
+              <g class="pf-node" data-stage="2" style="cursor:pointer;">
+                <circle cx="465" cy="148" r="12" fill="rgba(244,241,234,0.12)" />
+                <circle cx="465" cy="148" r="4.5" fill="#f4f1ea" />
+                <text x="498" y="138" fill="#7d7a73" font-size="10" font-family="JetBrains Mono" text-anchor="end">SINTOMA</text>
+              </g>
+
+              <g class="pf-node" data-stage="3" style="cursor:pointer;">
+                <circle cx="580" cy="230" r="14" fill="rgba(224,122,95,0.18)" />
+                <circle cx="580" cy="230" r="5" fill="#e07a5f" />
+                <text x="594" y="205" fill="#e07a5f" font-size="10" font-family="JetBrains Mono" text-anchor="start">PÓS-FALHA</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="pf-info">
+            <div class="pf-info-top">
+              <span id="pfBadge" class="prev">ESTÁGIO 01 • PREVENTIVA</span>
+              <span id="pfCostTag" class="muted">CUSTO: 1.0×</span>
+            </div>
+            <h3 id="pfTitle">Manutenção Preventiva Sistemática</h3>
+            <p id="pfDescription">
+              O ativo opera em regime nominal. Rotinas preventivas eliminam desgaste prematuro antes mesmo do surgimento de anomalias.
+            </p>
+            <div class="pf-meta-list">
+              <div>
+                <span>SINAL</span>
+                <p id="pfSignals">Temperatura, vibração e corrente dentro da linha-base VigIA.</p>
+              </div>
+              <div>
+                <span>AÇÃO</span>
+                <p id="pfAction">Lubrificação, limpeza, reaperto e inspeção preventiva programada.</p>
+              </div>
+              <div>
+                <span>RESULTADO</span>
+                <p id="pfImpact">Disponibilidade máxima e zero parada não planejada.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. Comparativo & Critério RCM -->
+    <section class="section" id="rcm">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="index">03 / CRITÉRIO TÉCNICO</span>
+          <h2>Comparativo &amp; Decisão RCM.</h2>
+        </div>
+
+        <div class="table-scroll reveal">
+          <table class="hairline-table">
+            <thead>
+              <tr>
+                <th>Critério</th>
+                <th>Pós-Falha (Reativa)</th>
+                <th class="col-prev">Preventiva Sistemática</th>
+                <th class="col-prev">Preventiva + VigIA</th>
+              </tr>
+            </thead>
+            <tbody id="comparisonBody"></tbody>
+          </table>
+        </div>
+
+        <div class="rcm-block reveal">
+          <div class="rcm-top">
+            <div>
+              <span class="index">MATRIZ RCM</span>
+              <h3>Quando aplicar Preventiva + VigIA vs. Pós-Falha?</h3>
+            </div>
+            <div class="presets">
+              <button class="preset" data-preset="compressor">Compressor Crítico</button>
+              <button class="preset" data-preset="bomba">Bomba c/ Reserva</button>
+              <button class="preset" data-preset="lampada">Luminária Auxiliar</button>
+            </div>
+          </div>
+
+          <div class="rcm-columns">
+            <div class="rcm-questions">
+              <div class="q-row">
+                <div>
+                  <strong>01. Risco à Segurança ou Meio Ambiente (NR-12)</strong>
+                  <span>A falha súbita coloca pessoas ou o entorno em risco?</span>
+                </div>
+                <div class="seg" data-question="safety">
+                  <button class="seg-opt active" data-value="yes">Sim</button>
+                  <button class="seg-opt" data-value="no">Não</button>
+                </div>
+              </div>
+
+              <div class="q-row">
+                <div>
+                  <strong>02. Impacto Direto na Produção</strong>
+                  <span>A parada interrompe a linha principal ou entregas?</span>
+                </div>
+                <div class="seg" data-question="production">
+                  <button class="seg-opt active" data-value="yes">Sim</button>
+                  <button class="seg-opt" data-value="no">Não</button>
+                </div>
+              </div>
+
+              <div class="q-row">
+                <div>
+                  <strong>03. Redundância Imediata (Stand-by)</strong>
+                  <span>Há ativo reserva pronto para assumir automaticamente?</span>
+                </div>
+                <div class="seg" data-question="redundancy">
+                  <button class="seg-opt" data-value="yes">Sim</button>
+                  <button class="seg-opt active" data-value="no">Não</button>
+                </div>
+              </div>
+
+              <div class="q-row">
+                <div>
+                  <strong>04. Custo da Quebra vs. Prevenção</strong>
+                  <span>O reparo pós-falha supera muito o custo preventivo?</span>
+                </div>
+                <div class="seg" data-question="costRatio">
+                  <button class="seg-opt active" data-value="high">Sim</button>
+                  <button class="seg-opt" data-value="low">Não</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="rcm-output" id="rcmResultCard">
+              <span class="verdict-tag" id="rcmCriticality">CRITICIDADE A</span>
+              <h4 id="rcmDecisionTitle">Preventiva Obrigatória + Monitoramento VigIA</h4>
+              <p id="rcmDecisionDesc">
+                Operar até a falha é inaceitável. Exige plano preventivo rigoroso e vigilância contínua VigIA para interceptar falhas no Ponto P.
+              </p>
+              <ul id="rcmActionList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Simulador Financeiro & Execução -->
+    <section class="section" id="pratica">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="index">04 / IMPACTO &amp; EXECUÇÃO</span>
+          <h2>Retorno financeiro &amp; rotinas preventivas.</h2>
+        </div>
+
+        <!-- Simulador -->
+        <div class="sim-layout reveal">
+          <div class="sim-sliders">
+            <div class="slider-item">
+              <div class="slider-head">
+                <label for="downtimeCost">Custo da Hora Parada</label>
+                <span id="downtimeCostVal">R$ 3.500 / h</span>
+              </div>
+              <input type="range" id="downtimeCost" min="500" max="20000" step="250" value="3500" />
+            </div>
+
+            <div class="slider-item">
+              <div class="slider-head">
+                <label for="failuresPerYear">Falhas Pós-Falha / Ano</label>
+                <span id="failuresPerYearVal">14 falhas</span>
+              </div>
+              <input type="range" id="failuresPerYear" min="2" max="40" step="1" value="14" />
+            </div>
+
+            <div class="slider-item">
+              <div class="slider-head">
+                <label for="mttrHours">Tempo Médio de Reparo (MTTR)</label>
+                <span id="mttrHoursVal">6 horas</span>
+              </div>
+              <input type="range" id="mttrHours" min="1" max="24" step="1" value="6" />
+            </div>
+
+            <div class="slider-item">
+              <div class="slider-head">
+                <label for="preventiveMonthly">Investimento Preventiva + VigIA / Mês</label>
+                <span id="preventiveMonthlyVal">R$ 6.500 / mês</span>
+              </div>
+              <input type="range" id="preventiveMonthly" min="1000" max="30000" step="500" value="6500" />
+            </div>
+          </div>
+
+          <div class="sim-readout">
+            <div class="sim-pair">
+              <div>
+                <span class="lbl">100% PÓS-FALHA</span>
+                <strong class="val warn" id="reactiveAnnualCost">R$ 357.000</strong>
+                <span class="sub" id="reactiveDowntimeInfo">84h paradas/ano</span>
+              </div>
+              <div>
+                <span class="lbl">PREVENTIVA + VIGIA</span>
+                <strong class="val prev" id="preventiveAnnualCost">R$ 168.400</strong>
+                <span class="sub" id="preventiveDowntimeInfo">-65% quebras súbitas</span>
+              </div>
+            </div>
+
+            <div class="sim-net">
+              <div>
+                <span class="lbl">ECONOMIA ANUAL ESTIMADA</span>
+                <strong class="net-val" id="annualSavings">R$ 188.600 / ano</strong>
+              </div>
+              <div class="net-meta">
+                <span id="roiPercent">ROI: 242%</span>
+                <span id="hoursRecovered">+55h produtivas</span>
+              </div>
+            </div>
+
+            <div class="bars">
+              <div class="bar-line">
+                <span>Pós-Falha</span>
+                <div class="track"><div class="fill fill-warn" id="barReactive" style="width:100%"></div></div>
+              </div>
+              <div class="bar-line">
+                <span>VigIA</span>
+                <div class="track"><div class="fill fill-prev" id="barPreventive" style="width:47%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checklist Preventivo & Protocolo Pós-Falha -->
+        <div class="work-block reveal">
+          <div class="work-tabs">
+            <button class="work-tab active" data-tab="checklistTab">01. Checklist Preventivo VigIA</button>
+            <button class="work-tab" data-tab="emergencyTab">02. Protocolo Pós-Falha &amp; RCA</button>
+          </div>
+
+          <div class="work-panel active" id="checklistTab">
+            <div class="asset-bar">
+              <div class="asset-list" id="assetSelector">
+                <button class="asset-opt active" data-asset="motores">Motores</button>
+                <button class="asset-opt" data-asset="bombas">Bombas</button>
+                <button class="asset-opt" data-asset="compressores">Compressores</button>
+                <button class="asset-opt" data-asset="paineis">Painéis</button>
+              </div>
+              <span class="progress-lbl" id="checklistProgressText">0 / 6 (0%)</span>
+            </div>
+
+            <div class="check-list" id="checklistItems"></div>
+
+            <div class="check-footer">
+              <button class="btn-ghost" id="resetChecklistBtn">Limpar</button>
+              <button class="btn-fill" id="copyChecklistBtn">Copiar Ordem Preventiva</button>
+              <span class="copy-status" id="copyFeedback" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="work-panel" id="emergencyTab">
+            <div class="step-row" id="stepperNav">
+              <button class="step-opt active" data-step="0">01. LOTO</button>
+              <button class="step-opt" data-step="1">02. Triagem</button>
+              <button class="step-opt" data-step="2">03. MRO</button>
+              <button class="step-opt" data-step="3">04. Reparo</button>
+              <button class="step-opt" data-step="4">05. RCA → VigIA</button>
+            </div>
+            <div class="step-content" id="stepCard"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Mínimo -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <span><strong>Vig<em>IA</em></strong> — Vigilância Preventiva &amp; Engenharia de Confiabilidade (ABNT NBR 5462)</span>
+      <span class="files-tag">index.html · styles.css · data.js · app.js</span>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
